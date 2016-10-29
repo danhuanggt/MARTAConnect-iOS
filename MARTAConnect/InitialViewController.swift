@@ -60,7 +60,8 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     }
     
     @IBAction func startButtonPressed(_ sender: AnyObject) {
-        
+        startButton.setTitle("Walk to \(trip1Name.text!)...", for: .normal)
+        startButton.isEnabled = false
     }
 
     @IBAction func textField(_ sender: AnyObject) {
@@ -117,6 +118,21 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 guard let JSONResponse = value as? NSDictionary else {
                     return
                 }
+                
+                self.trip1Name.text = JSONResponse["startMartaname"] as? String
+                self.trip1Time.text = JSONResponse["startMartatime"] as? String
+                self.trip1Distance.text = JSONResponse["startMartadist"] as? String
+                
+                self.trip2Name.text = JSONResponse["startUbername"] as? String
+                self.trip2Time.text = JSONResponse["startUbertime"] as? String
+                self.trip2Distance.text = JSONResponse["startUbercost"] as? String
+                
+                self.trip3Name.text = JSONResponse["endTripname"] as? String
+                self.trip3Time.text = JSONResponse["endTriptime"] as? String
+                
+                let distance = JSONResponse["endTripdist"] as? String
+                let cost = JSONResponse["endTripcost"] as? String
+                self.trip3Distance.text = "\(distance!) (\(cost!))"
                 
                 print(JSONResponse)
                 
