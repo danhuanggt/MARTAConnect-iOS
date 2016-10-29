@@ -13,6 +13,8 @@ import MapKit
 class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var blurView: UIVisualEffectView!
+    @IBOutlet weak var locationTextField: UITextField!
     
     let locationManager = CLLocationManager()
     
@@ -32,7 +34,15 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func goButtonPressed(_ sender: AnyObject) {
+        // TODO:
+    }
 
+    @IBAction func textField(_ sender: AnyObject) {
+        self.view.endEditing(true)
+    }
+    
     // MARK: Networking
     
     func getSome() {
