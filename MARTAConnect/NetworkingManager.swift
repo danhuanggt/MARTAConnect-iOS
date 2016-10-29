@@ -15,7 +15,7 @@ class NetworkingManager {
     
     let manager = SessionManager()
     
-    let serverIP = "http://104.236.40.30:3000"
+    let serverIP = "http://104.236.40.30:3000/api"
     
     // MARK: Methods for GET / POST
     
@@ -29,9 +29,27 @@ class NetworkingManager {
     
     // MARK: API
     
-    func getSome(_ completion: @escaping (DataResponse<Any>) ->()) {
-        let someURL = "\(serverIP)/some"
-        getRequestWith(someURL) { response in
+    func getGeo(searchString: String, completion: @escaping (DataResponse<Any>) ->()) {
+        let url = "\(serverIP)/geo"
+
+        let params: [String:Any] = [
+            "searchString" : searchString
+        ]
+        
+        getRequestWith(url, params: params) { response in
+            completion(response)
+        }
+    }
+    
+    func getTrip(currentLocation: CLLocationCoordinate2D, completion: @escaping (DataResponse<Any>) ->()) {
+        let url = "\(serverIP)/trip"
+        
+        let params: [String:Any] = [
+            "lat" : currentLocation.latitude,
+            "lng" : currentLocation.longitude
+        ]
+        
+        getRequestWith(url, params: params) { response in
             completion(response)
         }
     }
