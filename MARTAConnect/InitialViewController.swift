@@ -34,6 +34,7 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     
     var currentLocation = CLLocationCoordinate2D()
     var destinationLocation = CLLocationCoordinate2D()
+    var hasZoomedIn = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -224,8 +225,11 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         currentLocation = userLocation.coordinate
-        let region = MKCoordinateRegion(center: userLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
-        mapView.setRegion(region, animated: true)
+        if (hasZoomedIn == false) {
+            let region = MKCoordinateRegion(center: userLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
+            mapView.setRegion(region, animated: true)
+            hasZoomedIn = true
+        }
     }
 }
 
