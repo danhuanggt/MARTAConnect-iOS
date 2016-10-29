@@ -10,8 +10,10 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class InitialViewController: UIViewController, CLLocationManagerDelegate {
+class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
+    @IBOutlet weak var mapView: MKMapView!
+    
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -20,6 +22,10 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate {
         // Setup Location
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        // Setup Map
+        mapView.delegate = self
+        mapView.showsUserLocation = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -95,6 +101,13 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         // Check permission for location services
         checkLocationPermission()
+    }
+    
+    // MARK: Map
+    
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        let region = MKCoordinateRegion(center: userLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
+        mapView.setRegion(region, animated: true)
     }
 }
 

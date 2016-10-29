@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,8 +18,20 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hmO-gB-E8G"/>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hmO-gB-E8G" secondAttribute="trailing" id="CIq-fX-gLk"/>
+                            <constraint firstItem="hmO-gB-E8G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dpk-5e-ksV"/>
+                            <constraint firstItem="hmO-gB-E8G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="ebb-ps-PFC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hmO-gB-E8G" secondAttribute="bottom" id="mDP-xU-w1Y"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="hmO-gB-E8G" id="5Bb-zQ-vGS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
