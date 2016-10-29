@@ -36,12 +36,7 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     }
     
     @IBAction func goButtonPressed(_ sender: AnyObject) {
-        // TODO: Perform search, show map + itenary
-        
-        // TODO: Animate out blurView on geocode success
-        UIView.animate(withDuration: 1.0) {
-            self.blurView.alpha = 0
-        }
+        getGeo()
     }
 
     @IBAction func textField(_ sender: AnyObject) {
@@ -50,8 +45,13 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     
     // MARK: Networking
     
-    func getSome() {
-        NetworkingManager.sharedInstance.getSome { response in
+    func getGeo() {
+        // Perform search
+        guard let searchString = locationTextField.text else {
+            return
+        }
+        
+        NetworkingManager.sharedInstance.getGeo(searchString: searchString) { response in
             switch response.result {
             case .success(let value):
                 print ("API Response Succeeded")
@@ -59,7 +59,13 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 guard let JSONResponse = value as? NSDictionary else {
                     return
                 }
+                
                 print(JSONResponse)
+                
+                if let lat = JSONResponse["lat"] as? Double, let lng = JSONResponse["lng"] as? Double {
+                    let destinationCoordinates = CLLocationCoordinate2D(latitude: lat, longitude: lng)
+                    self.showDestination(destinationCoordinates: destinationCoordinates)
+                }
                 
             case .failure(let error):
                 print("API Response Failed: \(error)")
@@ -74,6 +80,24 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 networkErrorAlertController.addAction(okAction)
                 self.present(networkErrorAlertController, animated: true, completion: nil)
             }
+        }
+    }
+    
+    // MARK: UI
+    
+    func showDestination(destinationCoordinates: CLLocationCoordinate2D) {
+        // Show destination placemarker
+        let destinationAnnotation = MKPointAnnotation()
+        destinationAnnotation.coordinate = destinationCoordinates
+        destinationAnnotation.title = "Destination"
+        mapView.addAnnotation(destinationAnnotation)
+        
+        let region = MKCoordinateRegion(center: destinationCoordinates, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+        mapView.setRegion(region, animated: true)
+        
+        // Animate out blurView on geocode success
+        UIView.animate(withDuration: 1.0) {
+            self.blurView.alpha = 0
         }
     }
     
