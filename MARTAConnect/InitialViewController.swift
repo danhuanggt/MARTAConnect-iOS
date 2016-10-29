@@ -18,6 +18,8 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     
     let locationManager = CLLocationManager()
     
+    var destination = CLLocationCoordinate2D()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,8 +65,8 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 print(JSONResponse)
                 
                 if let lat = JSONResponse["lat"] as? Double, let lng = JSONResponse["lng"] as? Double {
-                    let destinationCoordinates = CLLocationCoordinate2D(latitude: lat, longitude: lng)
-                    self.showDestination(destinationCoordinates: destinationCoordinates)
+                    self.destination = CLLocationCoordinate2D(latitude: lat, longitude: lng)
+                    self.showDestination()
                     self.getTrip()
                 }
                 
@@ -90,14 +92,14 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     
     // MARK: UI
     
-    func showDestination(destinationCoordinates: CLLocationCoordinate2D) {
+    func showDestination() {
         // Show destination placemarker
         let destinationAnnotation = MKPointAnnotation()
-        destinationAnnotation.coordinate = destinationCoordinates
+        destinationAnnotation.coordinate = self.destination
         destinationAnnotation.title = "Destination"
         mapView.addAnnotation(destinationAnnotation)
         
-        let region = MKCoordinateRegion(center: destinationCoordinates, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+        let region = MKCoordinateRegion(center: self.destination, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
         mapView.setRegion(region, animated: true)
         
         // Animate out blurView on geocode success
