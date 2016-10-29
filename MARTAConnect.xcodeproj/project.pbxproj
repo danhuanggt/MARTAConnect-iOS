@@ -14,6 +14,7 @@
 		6FF569C71DC47BC700A992BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF569C51DC47BC700A992BE /* LaunchScreen.storyboard */; };
 		6FF569D21DC47BC700A992BE /* MARTAConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF569D11DC47BC700A992BE /* MARTAConnectTests.swift */; };
 		6FF569DD1DC47BC700A992BE /* MARTAConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF569DC1DC47BC700A992BE /* MARTAConnectUITests.swift */; };
+		BB2CAEF8F63040BAF7B489E0 /* Pods_MARTAConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FCCE4AA9B0B997F9366037 /* Pods_MARTAConnect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05FCCE4AA9B0B997F9366037 /* Pods_MARTAConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MARTAConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C68E16C91B1AE8772B19781 /* Pods-MARTAConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARTAConnect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MARTAConnect/Pods-MARTAConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		6FF569B91DC47BC700A992BE /* MARTAConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MARTAConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF569BC1DC47BC700A992BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FF569BE1DC47BC700A992BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		6FF569D81DC47BC700A992BE /* MARTAConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARTAConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF569DC1DC47BC700A992BE /* MARTAConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARTAConnectUITests.swift; sourceTree = "<group>"; };
 		6FF569DE1DC47BC700A992BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF72DDB04F2A038464BDCDD1 /* Pods-MARTAConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARTAConnect.release.xcconfig"; path = "Pods/Target Support Files/Pods-MARTAConnect/Pods-MARTAConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2CAEF8F63040BAF7B489E0 /* Pods_MARTAConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				6FF569D01DC47BC700A992BE /* MARTAConnectTests */,
 				6FF569DB1DC47BC700A992BE /* MARTAConnectUITests */,
 				6FF569BA1DC47BC700A992BE /* Products */,
+				72E9E226021D0B7EAFC452CD /* Pods */,
+				AB4A7071F3EA3B013FBEB975 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = MARTAConnectUITests;
 			sourceTree = "<group>";
 		};
+		72E9E226021D0B7EAFC452CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C68E16C91B1AE8772B19781 /* Pods-MARTAConnect.debug.xcconfig */,
+				CF72DDB04F2A038464BDCDD1 /* Pods-MARTAConnect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB4A7071F3EA3B013FBEB975 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05FCCE4AA9B0B997F9366037 /* Pods_MARTAConnect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FF569E11DC47BC700A992BE /* Build configuration list for PBXNativeTarget "MARTAConnect" */;
 			buildPhases = (
+				E55229B3AAA52C99FA93B296 /* [CP] Check Pods Manifest.lock */,
 				6FF569B51DC47BC700A992BE /* Sources */,
 				6FF569B61DC47BC700A992BE /* Frameworks */,
 				6FF569B71DC47BC700A992BE /* Resources */,
+				0034C4E401FA8CD4941F23AB /* [CP] Embed Pods Frameworks */,
+				A7AA03732B4C9C06DD57D317 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0034C4E401FA8CD4941F23AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MARTAConnect/Pods-MARTAConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7AA03732B4C9C06DD57D317 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MARTAConnect/Pods-MARTAConnect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E55229B3AAA52C99FA93B296 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6FF569B51DC47BC700A992BE /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		6FF569E21DC47BC700A992BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C68E16C91B1AE8772B19781 /* Pods-MARTAConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZP6454PGZS;
@@ -426,6 +502,7 @@
 		};
 		6FF569E31DC47BC700A992BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF72DDB04F2A038464BDCDD1 /* Pods-MARTAConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZP6454PGZS;
@@ -514,6 +591,7 @@
 				6FF569E31DC47BC700A992BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FF569E41DC47BC700A992BE /* Build configuration list for PBXNativeTarget "MARTAConnectTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +600,7 @@
 				6FF569E61DC47BC700A992BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FF569E71DC47BC700A992BE /* Build configuration list for PBXNativeTarget "MARTAConnectUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +609,7 @@
 				6FF569E91DC47BC700A992BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

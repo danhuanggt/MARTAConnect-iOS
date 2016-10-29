@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.0.1)
+  - AlamofireNetworkActivityIndicator (2.0.0):
+    - Alamofire (~> 4.0)
+  - KBRoundedButton (1.0.4)
+  - MBProgressHUD (1.0.0)
+  - ObjectMapper (2.0.0)
+  - PureLayout (3.0.2)
+  - RKDropdownAlert (0.3.0)
+  - UIColor_Hex_Swift (3.0.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - AlamofireNetworkActivityIndicator (~> 2.0)
+  - KBRoundedButton (~> 1.0)
+  - MBProgressHUD (~> 1.0)
+  - ObjectMapper (~> 2.0)
+  - PureLayout (~> 3.0)
+  - RKDropdownAlert (~> 0.3)
+  - UIColor_Hex_Swift (~> 3.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AlamofireNetworkActivityIndicator: ba9f481748d954318dd99636abff028cd3fcdc07
+  KBRoundedButton: 8fde755b8f1df3ddd3c3c280d9b27ce04ab55d00
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  RKDropdownAlert: f4b3364c251829ad439dc666836a1f2dad26f4c7
+  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
+
+PODFILE CHECKSUM: f036195789b90303d5fc9aa6518055bf155018f9
+
+COCOAPODS: 1.1.0.rc.2
