@@ -21,7 +21,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hmO-gB-E8G"/>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4J-Jh-9Hr">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XKo-L1-v2u">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dude" translatesAutoresizingMaskIntoConstraints="NO" id="XKo-L1-v2u">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="7LU-ui-Zfi"/>
                                             <constraint firstAttribute="height" constant="80" id="Deu-vd-Bg4"/>
@@ -42,7 +42,7 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CQS-EP-ysH">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="train" translatesAutoresizingMaskIntoConstraints="NO" id="CQS-EP-ysH">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="A37-0T-AL4"/>
                                             <constraint firstAttribute="width" constant="80" id="BDj-22-myc"/>
@@ -63,7 +63,7 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Esr-Xe-0y9">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uber" translatesAutoresizingMaskIntoConstraints="NO" id="Esr-Xe-0y9">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="0a4-gd-Qmw"/>
                                             <constraint firstAttribute="width" constant="80" id="EeX-et-YoH"/>
@@ -204,5 +204,8 @@
     </scenes>
     <resources>
         <image name="MARTA-Logo" width="164" height="138"/>
+        <image name="dude" width="100" height="100"/>
+        <image name="train" width="100" height="100"/>
+        <image name="uber" width="100" height="100"/>
     </resources>
 </document>
