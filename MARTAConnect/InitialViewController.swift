@@ -33,6 +33,9 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         // Setup Map
         mapView.delegate = self
         mapView.showsUserLocation = true
+        
+        // Setup Constraint
+        tripViewHeightConstraint.constant = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -101,6 +104,8 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 
                 print(JSONResponse)
                 
+                self.showTrip()
+                
             case .failure(let error):
                 print("API Response Failed: \(error)")
                 
@@ -132,6 +137,13 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         // Animate out blurView on geocode success
         UIView.animate(withDuration: 1.0) {
             self.blurView.alpha = 0
+        }
+    }
+    
+    func showTrip() {
+        tripViewHeightConstraint.constant = 400
+        UIView.animate(withDuration: 0.75) { 
+            self.view.layoutIfNeeded()
         }
     }
     
