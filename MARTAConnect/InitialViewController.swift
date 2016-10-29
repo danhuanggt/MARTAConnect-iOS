@@ -36,7 +36,12 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     }
     
     @IBAction func goButtonPressed(_ sender: AnyObject) {
-        // TODO:
+        // TODO: Perform search, show map + itenary
+        
+        // TODO: Animate out blurView on geocode success
+        UIView.animate(withDuration: 1.0) {
+            self.blurView.alpha = 0
+        }
     }
 
     @IBAction func textField(_ sender: AnyObject) {
