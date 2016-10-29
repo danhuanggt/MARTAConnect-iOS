@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6FF569BD1DC47BC700A992BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF569BC1DC47BC700A992BE /* AppDelegate.swift */; };
-		6FF569BF1DC47BC700A992BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF569BE1DC47BC700A992BE /* ViewController.swift */; };
+		6FF569BF1DC47BC700A992BE /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF569BE1DC47BC700A992BE /* InitialViewController.swift */; };
 		6FF569C21DC47BC700A992BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF569C01DC47BC700A992BE /* Main.storyboard */; };
 		6FF569C41DC47BC700A992BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF569C31DC47BC700A992BE /* Assets.xcassets */; };
 		6FF569C71DC47BC700A992BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF569C51DC47BC700A992BE /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 		5C68E16C91B1AE8772B19781 /* Pods-MARTAConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARTAConnect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MARTAConnect/Pods-MARTAConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		6FF569B91DC47BC700A992BE /* MARTAConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MARTAConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF569BC1DC47BC700A992BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6FF569BE1DC47BC700A992BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FF569BE1DC47BC700A992BE /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		6FF569C11DC47BC700A992BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FF569C31DC47BC700A992BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FF569C61DC47BC700A992BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,10 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				6FF569BC1DC47BC700A992BE /* AppDelegate.swift */,
-				6FF569BE1DC47BC700A992BE /* ViewController.swift */,
+				6FF569BE1DC47BC700A992BE /* InitialViewController.swift */,
 				6FF569C01DC47BC700A992BE /* Main.storyboard */,
-				6FF569C31DC47BC700A992BE /* Assets.xcassets */,
 				6FF569C51DC47BC700A992BE /* LaunchScreen.storyboard */,
+				6FF569C31DC47BC700A992BE /* Assets.xcassets */,
 				6FF569C81DC47BC700A992BE /* Info.plist */,
 			);
 			path = MARTAConnect;
@@ -337,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FF569BF1DC47BC700A992BE /* ViewController.swift in Sources */,
+				6FF569BF1DC47BC700A992BE /* InitialViewController.swift in Sources */,
 				6FF569BD1DC47BC700A992BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
