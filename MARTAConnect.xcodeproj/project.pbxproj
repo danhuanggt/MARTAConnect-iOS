@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FF569BD1DC47BC700A992BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF569BC1DC47BC700A992BE /* AppDelegate.swift */; };
+		6FF569BF1DC47BC700A992BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF569BE1DC47BC700A992BE /* ViewController.swift */; };
+		6FF569C21DC47BC700A992BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF569C01DC47BC700A992BE /* Main.storyboard */; };
+		6FF569C41DC47BC700A992BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF569C31DC47BC700A992BE /* Assets.xcassets */; };
+		6FF569C71DC47BC700A992BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF569C51DC47BC700A992BE /* LaunchScreen.storyboard */; };
+		6FF569D21DC47BC700A992BE /* MARTAConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF569D11DC47BC700A992BE /* MARTAConnectTests.swift */; };
+		6FF569DD1DC47BC700A992BE /* MARTAConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF569DC1DC47BC700A992BE /* MARTAConnectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FF569CE1DC47BC700A992BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FF569B11DC47BC700A992BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FF569B81DC47BC700A992BE;
+			remoteInfo = MARTAConnect;
+		};
+		6FF569D91DC47BC700A992BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FF569B11DC47BC700A992BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FF569B81DC47BC700A992BE;
+			remoteInfo = MARTAConnect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6FF569B91DC47BC700A992BE /* MARTAConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MARTAConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF569BC1DC47BC700A992BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6FF569BE1DC47BC700A992BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FF569C11DC47BC700A992BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FF569C31DC47BC700A992BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FF569C61DC47BC700A992BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6FF569C81DC47BC700A992BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF569CD1DC47BC700A992BE /* MARTAConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARTAConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF569D11DC47BC700A992BE /* MARTAConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARTAConnectTests.swift; sourceTree = "<group>"; };
+		6FF569D31DC47BC700A992BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF569D81DC47BC700A992BE /* MARTAConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARTAConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF569DC1DC47BC700A992BE /* MARTAConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARTAConnectUITests.swift; sourceTree = "<group>"; };
+		6FF569DE1DC47BC700A992BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FF569B61DC47BC700A992BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF569CA1DC47BC700A992BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF569D51DC47BC700A992BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FF569B01DC47BC700A992BE = {
+			isa = PBXGroup;
+			children = (
+				6FF569BB1DC47BC700A992BE /* MARTAConnect */,
+				6FF569D01DC47BC700A992BE /* MARTAConnectTests */,
+				6FF569DB1DC47BC700A992BE /* MARTAConnectUITests */,
+				6FF569BA1DC47BC700A992BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FF569BA1DC47BC700A992BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FF569B91DC47BC700A992BE /* MARTAConnect.app */,
+				6FF569CD1DC47BC700A992BE /* MARTAConnectTests.xctest */,
+				6FF569D81DC47BC700A992BE /* MARTAConnectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FF569BB1DC47BC700A992BE /* MARTAConnect */ = {
+			isa = PBXGroup;
+			children = (
+				6FF569BC1DC47BC700A992BE /* AppDelegate.swift */,
+				6FF569BE1DC47BC700A992BE /* ViewController.swift */,
+				6FF569C01DC47BC700A992BE /* Main.storyboard */,
+				6FF569C31DC47BC700A992BE /* Assets.xcassets */,
+				6FF569C51DC47BC700A992BE /* LaunchScreen.storyboard */,
+				6FF569C81DC47BC700A992BE /* Info.plist */,
+			);
+			path = MARTAConnect;
+			sourceTree = "<group>";
+		};
+		6FF569D01DC47BC700A992BE /* MARTAConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FF569D11DC47BC700A992BE /* MARTAConnectTests.swift */,
+				6FF569D31DC47BC700A992BE /* Info.plist */,
+			);
+			path = MARTAConnectTests;
+			sourceTree = "<group>";
+		};
+		6FF569DB1DC47BC700A992BE /* MARTAConnectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6FF569DC1DC47BC700A992BE /* MARTAConnectUITests.swift */,
+				6FF569DE1DC47BC700A992BE /* Info.plist */,
+			);
+			path = MARTAConnectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FF569B81DC47BC700A992BE /* MARTAConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FF569E11DC47BC700A992BE /* Build configuration list for PBXNativeTarget "MARTAConnect" */;
+			buildPhases = (
+				6FF569B51DC47BC700A992BE /* Sources */,
+				6FF569B61DC47BC700A992BE /* Frameworks */,
+				6FF569B71DC47BC700A992BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MARTAConnect;
+			productName = MARTAConnect;
+			productReference = 6FF569B91DC47BC700A992BE /* MARTAConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FF569CC1DC47BC700A992BE /* MARTAConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FF569E41DC47BC700A992BE /* Build configuration list for PBXNativeTarget "MARTAConnectTests" */;
+			buildPhases = (
+				6FF569C91DC47BC700A992BE /* Sources */,
+				6FF569CA1DC47BC700A992BE /* Frameworks */,
+				6FF569CB1DC47BC700A992BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FF569CF1DC47BC700A992BE /* PBXTargetDependency */,
+			);
+			name = MARTAConnectTests;
+			productName = MARTAConnectTests;
+			productReference = 6FF569CD1DC47BC700A992BE /* MARTAConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6FF569D71DC47BC700A992BE /* MARTAConnectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FF569E71DC47BC700A992BE /* Build configuration list for PBXNativeTarget "MARTAConnectUITests" */;
+			buildPhases = (
+				6FF569D41DC47BC700A992BE /* Sources */,
+				6FF569D51DC47BC700A992BE /* Frameworks */,
+				6FF569D61DC47BC700A992BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FF569DA1DC47BC700A992BE /* PBXTargetDependency */,
+			);
+			name = MARTAConnectUITests;
+			productName = MARTAConnectUITests;
+			productReference = 6FF569D81DC47BC700A992BE /* MARTAConnectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FF569B11DC47BC700A992BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Technic;
+				TargetAttributes = {
+					6FF569B81DC47BC700A992BE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZP6454PGZS;
+						ProvisioningStyle = Automatic;
+					};
+					6FF569CC1DC47BC700A992BE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZP6454PGZS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6FF569B81DC47BC700A992BE;
+					};
+					6FF569D71DC47BC700A992BE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ZP6454PGZS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6FF569B81DC47BC700A992BE;
+					};
+				};
+			};
+			buildConfigurationList = 6FF569B41DC47BC700A992BE /* Build configuration list for PBXProject "MARTAConnect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FF569B01DC47BC700A992BE;
+			productRefGroup = 6FF569BA1DC47BC700A992BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FF569B81DC47BC700A992BE /* MARTAConnect */,
+				6FF569CC1DC47BC700A992BE /* MARTAConnectTests */,
+				6FF569D71DC47BC700A992BE /* MARTAConnectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FF569B71DC47BC700A992BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF569C71DC47BC700A992BE /* LaunchScreen.storyboard in Resources */,
+				6FF569C41DC47BC700A992BE /* Assets.xcassets in Resources */,
+				6FF569C21DC47BC700A992BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF569CB1DC47BC700A992BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF569D61DC47BC700A992BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FF569B51DC47BC700A992BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF569BF1DC47BC700A992BE /* ViewController.swift in Sources */,
+				6FF569BD1DC47BC700A992BE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF569C91DC47BC700A992BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF569D21DC47BC700A992BE /* MARTAConnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FF569D41DC47BC700A992BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FF569DD1DC47BC700A992BE /* MARTAConnectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FF569CF1DC47BC700A992BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FF569B81DC47BC700A992BE /* MARTAConnect */;
+			targetProxy = 6FF569CE1DC47BC700A992BE /* PBXContainerItemProxy */;
+		};
+		6FF569DA1DC47BC700A992BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FF569B81DC47BC700A992BE /* MARTAConnect */;
+			targetProxy = 6FF569D91DC47BC700A992BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FF569C01DC47BC700A992BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FF569C11DC47BC700A992BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6FF569C51DC47BC700A992BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FF569C61DC47BC700A992BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FF569DF1DC47BC700A992BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FF569E01DC47BC700A992BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FF569E21DC47BC700A992BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZP6454PGZS;
+				INFOPLIST_FILE = MARTAConnect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Technic.MARTAConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6FF569E31DC47BC700A992BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZP6454PGZS;
+				INFOPLIST_FILE = MARTAConnect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Technic.MARTAConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6FF569E51DC47BC700A992BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZP6454PGZS;
+				INFOPLIST_FILE = MARTAConnectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Technic.MARTAConnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MARTAConnect.app/MARTAConnect";
+			};
+			name = Debug;
+		};
+		6FF569E61DC47BC700A992BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZP6454PGZS;
+				INFOPLIST_FILE = MARTAConnectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Technic.MARTAConnectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MARTAConnect.app/MARTAConnect";
+			};
+			name = Release;
+		};
+		6FF569E81DC47BC700A992BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZP6454PGZS;
+				INFOPLIST_FILE = MARTAConnectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Technic.MARTAConnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MARTAConnect;
+			};
+			name = Debug;
+		};
+		6FF569E91DC47BC700A992BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZP6454PGZS;
+				INFOPLIST_FILE = MARTAConnectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Technic.MARTAConnectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MARTAConnect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FF569B41DC47BC700A992BE /* Build configuration list for PBXProject "MARTAConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF569DF1DC47BC700A992BE /* Debug */,
+				6FF569E01DC47BC700A992BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FF569E11DC47BC700A992BE /* Build configuration list for PBXNativeTarget "MARTAConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF569E21DC47BC700A992BE /* Debug */,
+				6FF569E31DC47BC700A992BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6FF569E41DC47BC700A992BE /* Build configuration list for PBXNativeTarget "MARTAConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF569E51DC47BC700A992BE /* Debug */,
+				6FF569E61DC47BC700A992BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6FF569E71DC47BC700A992BE /* Build configuration list for PBXNativeTarget "MARTAConnectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF569E81DC47BC700A992BE /* Debug */,
+				6FF569E91DC47BC700A992BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FF569B11DC47BC700A992BE /* Project object */;
+}
