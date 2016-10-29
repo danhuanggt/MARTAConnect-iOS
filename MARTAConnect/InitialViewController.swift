@@ -20,6 +20,33 @@ class InitialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: Networking
+    
+    func getSome() {
+        NetworkingManager.sharedInstance.getSome { response in
+            switch response.result {
+            case .success(let value):
+                print ("API Response Succeeded")
+                
+                guard let JSONResponse = value as? NSDictionary else {
+                    return
+                }
+                print(JSONResponse)
+                
+            case .failure(let error):
+                print("API Response Failed: \(error)")
+                
+                // Show Network Error Alert
+                let networkErrorAlertController = UIAlertController(title: "Network Error",
+                message: error.localizedDescription,
+                preferredStyle: .alert)
 
+                let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+
+                networkErrorAlertController.addAction(okAction)
+                self.present(networkErrorAlertController, animated: true, completion: nil)
+            }
+        }
+    }
 }
 
