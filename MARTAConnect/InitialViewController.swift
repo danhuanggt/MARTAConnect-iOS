@@ -15,10 +15,13 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var blurView: UIVisualEffectView!
     @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var tripView: UIView!
+    @IBOutlet weak var tripViewHeightConstraint: NSLayoutConstraint!
     
     let locationManager = CLLocationManager()
     
-    var destination = CLLocationCoordinate2D()
+    var currentLocation = CLLocationCoordinate2D()
+    var destinationLocation = CLLocationCoordinate2D()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +68,7 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 print(JSONResponse)
                 
                 if let lat = JSONResponse["lat"] as? Double, let lng = JSONResponse["lng"] as? Double {
-                    self.destination = CLLocationCoordinate2D(latitude: lat, longitude: lng)
+                    self.destinationLocation = CLLocationCoordinate2D(latitude: lat, longitude: lng)
                     self.showDestination()
                     self.getTrip()
                 }
@@ -87,7 +90,31 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     }
     
     func getTrip() {
-        
+        NetworkingManager.sharedInstance.getTrip(currentLocation: currentLocation, destinationLocation: destinationLocation) { response in
+            switch response.result {
+            case .success(let value):
+                print ("API Response Succeeded")
+                
+                guard let JSONResponse = value as? NSDictionary else {
+                    return
+                }
+                
+                print(JSONResponse)
+                
+            case .failure(let error):
+                print("API Response Failed: \(error)")
+                
+                // Show Network Error Alert
+                let networkErrorAlertController = UIAlertController(title: "Network Error",
+                                                                    message: error.localizedDescription,
+                                                                    preferredStyle: .alert)
+                
+                let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                
+                networkErrorAlertController.addAction(okAction)
+                self.present(networkErrorAlertController, animated: true, completion: nil)
+            }
+        }
     }
     
     // MARK: UI
@@ -95,11 +122,11 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     func showDestination() {
         // Show destination placemarker
         let destinationAnnotation = MKPointAnnotation()
-        destinationAnnotation.coordinate = self.destination
+        destinationAnnotation.coordinate = self.destinationLocation
         destinationAnnotation.title = "Destination"
         mapView.addAnnotation(destinationAnnotation)
         
-        let region = MKCoordinateRegion(center: self.destination, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+        let region = MKCoordinateRegion(center: self.destinationLocation, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
         mapView.setRegion(region, animated: true)
         
         // Animate out blurView on geocode success
@@ -152,6 +179,7 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     // MARK: Map
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        currentLocation = userLocation.coordinate
         let region = MKCoordinateRegion(center: userLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
         mapView.setRegion(region, animated: true)
     }

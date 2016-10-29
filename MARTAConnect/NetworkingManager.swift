@@ -41,12 +41,14 @@ class NetworkingManager {
         }
     }
     
-    func getTrip(currentLocation: CLLocationCoordinate2D, completion: @escaping (DataResponse<Any>) ->()) {
+    func getTrip(currentLocation: CLLocationCoordinate2D, destinationLocation: CLLocationCoordinate2D, completion: @escaping (DataResponse<Any>) ->()) {
         let url = "\(serverIP)/trip"
         
         let params: [String:Any] = [
-            "lat" : currentLocation.latitude,
-            "lng" : currentLocation.longitude
+            "userLat" : currentLocation.latitude,
+            "userLng" : currentLocation.longitude,
+            "destLat" : destinationLocation.latitude,
+            "destLng" : destinationLocation.longitude
         ]
         
         getRequestWith(url, params: params) { response in

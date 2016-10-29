@@ -18,9 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hmO-gB-E8G">
-                                <frame key="frameInset" width="1000" height="1000"/>
-                            </mapView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hmO-gB-E8G"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4J-Jh-9Hr">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fdD-UT-WXI"/>
+                                </constraints>
+                            </view>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4F-ny-4B1">
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pzx-x4-flt">
                                     <frame key="frameInset"/>
@@ -64,20 +68,25 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="y4J-Jh-9Hr" secondAttribute="trailing" id="28l-21-oIb"/>
                             <constraint firstItem="g4F-ny-4B1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="5t4-qV-NHB"/>
-                            <constraint firstAttribute="topMargin" secondItem="hmO-gB-E8G" secondAttribute="top" id="Icb-Tm-2m8"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="hmO-gB-E8G" secondAttribute="bottom" id="Kff-4o-OBv"/>
-                            <constraint firstAttribute="trailing" secondItem="hmO-gB-E8G" secondAttribute="trailing" id="O9q-UP-U3G"/>
+                            <constraint firstItem="y4J-Jh-9Hr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CCS-0E-PKr"/>
+                            <constraint firstAttribute="trailing" secondItem="hmO-gB-E8G" secondAttribute="trailing" id="Exx-ir-VrC"/>
                             <constraint firstAttribute="trailing" secondItem="g4F-ny-4B1" secondAttribute="trailing" id="OsO-M3-hO1"/>
+                            <constraint firstItem="y4J-Jh-9Hr" firstAttribute="top" secondItem="hmO-gB-E8G" secondAttribute="bottom" id="P9H-96-Dvg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g4F-ny-4B1" secondAttribute="bottom" id="SPt-4r-HeV"/>
                             <constraint firstItem="g4F-ny-4B1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wro-Do-QgK"/>
-                            <constraint firstItem="hmO-gB-E8G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qrx-yN-qx4"/>
+                            <constraint firstItem="hmO-gB-E8G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Yau-3o-fXl"/>
+                            <constraint firstItem="hmO-gB-E8G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="adz-GW-HMe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y4J-Jh-9Hr" secondAttribute="bottom" id="dLv-nM-bCA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="blurView" destination="g4F-ny-4B1" id="b8L-Mr-XD6"/>
                         <outlet property="locationTextField" destination="Xbj-C7-Apq" id="zvT-fX-cWI"/>
                         <outlet property="mapView" destination="hmO-gB-E8G" id="5Bb-zQ-vGS"/>
+                        <outlet property="tripView" destination="y4J-Jh-9Hr" id="m8N-fz-eQL"/>
+                        <outlet property="tripViewHeightConstraint" destination="fdD-UT-WXI" id="Ouj-ee-2xE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
