@@ -87,6 +87,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUg-Gk-Fer">
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <state key="normal" title="START!"/>
+                                        <connections>
+                                            <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qTv-3R-Y05"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -180,6 +183,16 @@
                         <outlet property="blurView" destination="g4F-ny-4B1" id="b8L-Mr-XD6"/>
                         <outlet property="locationTextField" destination="Xbj-C7-Apq" id="zvT-fX-cWI"/>
                         <outlet property="mapView" destination="hmO-gB-E8G" id="5Bb-zQ-vGS"/>
+                        <outlet property="startButton" destination="iUg-Gk-Fer" id="2Ng-6g-etG"/>
+                        <outlet property="trip1Distance" destination="Yh0-Cw-sDa" id="1uc-Sd-ir2"/>
+                        <outlet property="trip1Name" destination="sgo-SE-PvW" id="vqQ-HB-gqj"/>
+                        <outlet property="trip1Time" destination="qIR-mT-iz7" id="XGU-aC-Ldx"/>
+                        <outlet property="trip2Distance" destination="WS6-CI-3Wj" id="6T9-9x-i6u"/>
+                        <outlet property="trip2Name" destination="fLH-zL-FRP" id="a8w-cR-Scn"/>
+                        <outlet property="trip2Time" destination="U4X-Vd-oQm" id="0T7-aI-gCn"/>
+                        <outlet property="trip3Distance" destination="lwl-Na-uaz" id="lAk-E9-dsf"/>
+                        <outlet property="trip3Name" destination="1ar-Lz-HTx" id="3bu-bb-awD"/>
+                        <outlet property="trip3Time" destination="CsP-2f-iLY" id="jw1-IZ-K6v"/>
                         <outlet property="tripView" destination="y4J-Jh-9Hr" id="m8N-fz-eQL"/>
                         <outlet property="tripViewHeightConstraint" destination="fdD-UT-WXI" id="Ouj-ee-2xE"/>
                     </connections>

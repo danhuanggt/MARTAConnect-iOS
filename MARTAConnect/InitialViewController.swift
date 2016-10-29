@@ -18,6 +18,18 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     @IBOutlet weak var tripView: UIView!
     @IBOutlet weak var tripViewHeightConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var trip1Name: UILabel!
+    @IBOutlet weak var trip1Distance: UILabel!
+    @IBOutlet weak var trip1Time: UILabel!
+    @IBOutlet weak var trip2Name: UILabel!
+    @IBOutlet weak var trip2Distance: UILabel!
+    @IBOutlet weak var trip2Time: UILabel!
+    @IBOutlet weak var trip3Name: UILabel!
+    @IBOutlet weak var trip3Distance: UILabel!
+    @IBOutlet weak var trip3Time: UILabel!
+    
+    @IBOutlet weak var startButton: UIButton!
+    
     let locationManager = CLLocationManager()
     
     var currentLocation = CLLocationCoordinate2D()
@@ -45,6 +57,10 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     
     @IBAction func goButtonPressed(_ sender: AnyObject) {
         getGeo()
+    }
+    
+    @IBAction func startButtonPressed(_ sender: AnyObject) {
+        
     }
 
     @IBAction func textField(_ sender: AnyObject) {
