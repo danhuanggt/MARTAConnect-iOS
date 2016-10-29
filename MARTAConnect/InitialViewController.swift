@@ -65,6 +65,7 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 if let lat = JSONResponse["lat"] as? Double, let lng = JSONResponse["lng"] as? Double {
                     let destinationCoordinates = CLLocationCoordinate2D(latitude: lat, longitude: lng)
                     self.showDestination(destinationCoordinates: destinationCoordinates)
+                    self.getTrip()
                 }
                 
             case .failure(let error):
@@ -81,6 +82,10 @@ class InitialViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 self.present(networkErrorAlertController, animated: true, completion: nil)
             }
         }
+    }
+    
+    func getTrip() {
+        
     }
     
     // MARK: UI

@@ -18,7 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hmO-gB-E8G"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hmO-gB-E8G">
+                                <frame key="frameInset" width="1000" height="1000"/>
+                            </mapView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4F-ny-4B1">
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pzx-x4-flt">
                                     <frame key="frameInset"/>
@@ -29,7 +31,7 @@
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="e.g. The Varsity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xbj-C7-Apq">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="e.g. The Varsity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xbj-C7-Apq">
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
                                             <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -44,13 +46,7 @@
                                                 <action selector="goButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bSW-Sl-D9l"/>
                                             </connections>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RvT-zz-iBt">
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="fEt-7Z-8fj"/>
-                                                <constraint firstAttribute="height" constant="100" id="v7U-Q5-Wl8"/>
-                                            </constraints>
-                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MARTA-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="RvT-zz-iBt"/>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Xbj-C7-Apq" firstAttribute="centerX" secondItem="Pzx-x4-flt" secondAttribute="centerX" id="5Iw-3Z-uv5"/>
@@ -60,7 +56,7 @@
                                         <constraint firstItem="xVD-dX-gcl" firstAttribute="top" secondItem="Xbj-C7-Apq" secondAttribute="bottom" constant="8" id="THi-CS-Wyq"/>
                                         <constraint firstItem="Xbj-C7-Apq" firstAttribute="top" secondItem="ayC-m2-kNj" secondAttribute="bottom" constant="8" id="U2F-9v-ohN"/>
                                         <constraint firstItem="RvT-zz-iBt" firstAttribute="centerX" secondItem="Pzx-x4-flt" secondAttribute="centerX" id="br3-Al-w6s"/>
-                                        <constraint firstItem="ayC-m2-kNj" firstAttribute="top" secondItem="RvT-zz-iBt" secondAttribute="bottom" constant="30" id="iTp-Pf-05x"/>
+                                        <constraint firstItem="ayC-m2-kNj" firstAttribute="top" secondItem="RvT-zz-iBt" secondAttribute="bottom" constant="20" id="iTp-Pf-05x"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="light"/>
@@ -89,4 +85,7 @@
             <point key="canvasLocation" x="140" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MARTA-Logo" width="164" height="138"/>
+    </resources>
 </document>

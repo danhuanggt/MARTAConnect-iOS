@@ -31,8 +31,9 @@
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "MARTA-LOGO-120-white.png",
       "scale" : "2x"
     },
     {
